@@ -1,0 +1,101 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #243047;
+}
+
+button, input, select {
+  padding: 11px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+button {
+  background: #3157c8;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #8b99b5;
+  cursor: default;
+}
+
+input, select {
+  border: 1px solid #ccd4e0;
+  background: white;
+}
+
+.login {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px #0001;
+  text-align: center;
+}
+
+.login form, .course-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.app header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  background: white;
+  padding: 18px 5%;
+}
+
+.app nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 16px 5%;
+  background: #e4eaff;
+}
+
+main {
+  padding: 25px 5%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+article {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px #0000000a;
+}
+
+.course-form {
+  max-width: 400px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 500px) {
+  .app header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .login {
+    margin: 40px 16px;
+  }
+}
