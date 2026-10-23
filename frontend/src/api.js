@@ -1,4 +1,4 @@
-const API_BASE = 'http://127.0.0.1:8000/api';
+const API_BASE = 'https://eles-project-o1o3-bjsi378bs-harieshh.vercel.app/api';
 
 export function getStoredToken() {
   return localStorage.getItem('eles_token');
