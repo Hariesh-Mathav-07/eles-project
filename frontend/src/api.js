@@ -1,5 +1,4 @@
-const API_BASE = 'https://eles-project-o1o3-bjsi378bs-harieshh.vercel.app/api';
-
+const API_BASE = 'https://eles-project.onrender.com/api';
 export function getStoredToken() {
   return localStorage.getItem('eles_token');
 }
